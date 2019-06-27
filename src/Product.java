@@ -2,7 +2,7 @@
 import java.math.RoundingMode;
 import java.text.NumberFormat;
 
-public class Product {
+public abstract class Product {
 
     private String code;
     private String description;
@@ -13,7 +13,6 @@ public class Product {
         code = "";
         description = "";
         price = 0.0;
-
     }
 
 
@@ -23,6 +22,16 @@ public class Product {
                 "Description:\t" + description + "\n" +
                 "Price:\t" + this.getFormatedPrice() + "\n";
     }
+
+    //@Override
+//    public boolean equals(Product obj){
+//        if(obj == null){ return false; }
+//        if(this.getClass() != obj.getClass()){ return false;}
+//        if(code != (obj).code){return false;}
+//        if(description != (obj).description){return false;}
+//        if(price != (obj).price){return false;}
+//        else{return true;}
+//    }
 
     private String getFormatedPrice() {
         //use Number format to change to 2 decimals

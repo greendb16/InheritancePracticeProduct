@@ -1,4 +1,4 @@
-public class Software extends Product {
+public final class Software extends Product {
 
     private String programmer;
     private String platform;
@@ -8,6 +8,15 @@ public class Software extends Product {
     public String toString(){
         return "\n\nOS:\t" + getOs() + "\nPlatform:\t" + getPlatform() + "\nProgramed by:\t" + getProgrammer() +"\n" + super.toString() + "---------------------------";
     }
+    //@Override
+//    public boolean equals(Software obj){
+//        if(obj == null){ return false; }
+//        if(this.getClass() != obj.getClass()){ return false;}
+//        if(programmer != (obj).programmer){return false;}
+//        if(platform != (obj).platform){return false;}
+//        if(os != (obj).os){return false;}
+//        else{return true;}
+//    }
 
     public String getProgrammer() {
         return programmer; }

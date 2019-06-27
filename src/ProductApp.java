@@ -1,4 +1,11 @@
+import java.util.ArrayList;
+import java.util.Collection;
+
 public class ProductApp {
+
+    private static ArrayList<Product> inventory;
+
+
 
     public static void main(String[]args){
 
@@ -12,6 +19,7 @@ public class ProductApp {
         System.out.println(a.toString());
 
 
+
         Book b = new Book();
         b.setCode("Book 1031");
         b.setAuthor("B.B Wolf");
@@ -20,6 +28,7 @@ public class ProductApp {
         b.setPrice(49.95);
         b.setTitle("Biggest Bestest Halloween");
         System.out.println(b.toString());
+
 
         Software c = new Software();
         c.setOs("Windows 95");
@@ -38,7 +47,7 @@ public class ProductApp {
         d.setDescription("It totally does a thing");
         d.setCode("Software 1999");
         System.out.println(d.toString());
-    }
 
+    }
 
 }
